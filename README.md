@@ -7,9 +7,10 @@ Capital Bikeshare .csv files are available at: http://capitalbikeshare.com/trip-
 
 ## Get started
 
+1. Create a new [virtualenv](http://www.virtualenv.org/en/latest/virtualenv.html) and install the requirements with `pip install -r requirements.txt`
 1. Use the `ride_ddl.sql` script to add the `ride` table to your database
 1. Update the `MySQL settings` section in `bikeshare_loader.py` to work with your connection
-1. Run `**python bikeshare_loader.py** 2013-1st-quarter.csv`, using a path to your CSV file
+1. Run `python bikeshare_loader.py 2013-1st-quarter.csv`, using a path to your CSV file
 
 The script will commit after every 500 rows inserted. Enjoy!
 
